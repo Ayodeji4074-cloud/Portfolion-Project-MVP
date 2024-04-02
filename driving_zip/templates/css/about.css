@@ -1,0 +1,87 @@
+/*
+Template Name: Driving
+File: Layout CSS
+Author: TemplatesOnWeb
+Author URI: https://www.templateonweb.com/
+Licence: <a href="https://www.templateonweb.com/license">Website Template Licence</a>
+*/
+/*********************about****************/
+#about_h{
+padding-top:40px;
+padding-bottom:40px; 
+ }
+.about_h1r p i{
+vertical-align:middle;
+margin-right:5px; 
+ }
+ 
+#work_h{
+padding-top:40px;
+padding-bottom:40px;
+background:#f4f4f4; 
+ }
+.work_h1i1 span{
+width:100px;
+height:100px;
+line-height:98px;
+text-align:center;
+display:inline-block;
+border-radius:50%; 
+background:#ffdd00;
+color:#000;
+font-size:40px; 
+ }
+.work_h1i2 span{
+width:35px;
+height:35px;
+line-height:35px;
+text-align:center;
+display:inline-block;
+border-radius:50%; 
+background:#002b5e;
+color:#fff;
+font-size:14px; 
+ }
+.work_h1i{
+position:relative; 
+ }
+.work_h1i2{
+position:absolute;
+top:-10px;
+left:33%;
+ }
+/*********************about_end****************/
+
+
+@media screen and (max-width : 767px){
+.work_h1i {
+margin-top:15px; 
+ }
+#about_h{
+text-align:center; 
+ }
+.about_h1l {
+margin-top:15px;  
+ }
+.work_h1i2{
+position:static;
+margin-top:10px; 
+ }
+.work_h1i1 p{
+text-align:left; 
+ }
+#about_h p{
+text-align:left; 
+ }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+
+ }
+@media (min-width:992px) and (max-width:1200px) {
+
+  }
+@media (min-width:1201px) and (max-width:1270px) {
+
+ }
