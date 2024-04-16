@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="about a landing page">
+        <meta name="author" content="">
+
+        <title>Gwus Driving School landing page</title>
+
+        <!-- CSS FILES -->
+             
+        <link rel="preconnect" href="{{ url_for('static', filename='https://fonts.googleapis.com') }}">
+        
+        <link rel="preconnect" href="{{ url_for('static', filename='https://fonts.gstatic.com') }}" crossorigin>
+
+        <link href="{{ url_for('static', filename='https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700&display=swap') }}" rel="stylesheet">
+
+        <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+        <link href="{{ url_for('static', filename='css/bootstrap-icons.css') }}" rel="stylesheet">
+
+        <link href="{{ url_for('static', filename='css/templatemo-ebook-landing.css') }}" rel="stylesheet">
+<!--
+
+TemplateMo 588 ebook landing
+
+https://templatemo.com/tm-588-ebook-landing
+
+-->
+    </head>
+    
+    <body>
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <span>GWUS</span>
+                    </a>
+
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-auto me-lg-4">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1">Home</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">The Project</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">Author</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_4">Reviews</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_5">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12 mb-5 pb-5 pb-lg-0 mb-lg-0">
+
+                            <h6>Introducing Project</h6>
+
+                            <h1 class="text-black mb-4">Driving School landing page</h1>
+                            <p><b>A PROJECT BASED ON AN APPLICATION THAT ALLOWS BOOKING DRIVING CLASSES AND OTHER SERVICES</b></p>
+
+                            <a href="/login_page" class="btn custom-btn smoothscroll me-3">Login</a>
+
+                            <a href="#section_3" class="link link--kale smoothscroll">Meet the Author</a>
+                        </div>
+
+                        <div class="hero-image-wrap col-lg-6 col-12 mt-3 mt-lg-0">
+                            <img src="{{ url_for('static', filename='img/1.jfif') }}" class="hero-image img-fluid" alt="Driving School">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="py-lg-5"></section>
+
+
+            <section class="book-section section-padding" id="section_2">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+                            <img src="{{ url_for('static', filename='img/2.png') }}" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="book-section-info">
+                                <h6>Modern &amp; Creative</h6>
+
+
+                                <h2 class="mb-4">About The Project</h2>
+ 
+                                <p>This Project is all about providing easy access for people that has interest in learning how to drive.</p>
+                                <p>Sometimes i do sit down, and think how can we make people get access to somethings with no difficulty,</p>
+                                <p> This was the reason i came with a no difficulty access for people that has maximum interest in driving.</p>
+                                <p>As the author, this is my github account link; </p>
+                                <p> <a href="https://github.com/Ayodeji4074-cloud">AUTHOR'S GITHUB</a></p>
+                                <P>This is the project github repo; </p>
+                                <p><a href="https://github.com/Ayodeji4074-cloud/Portfolion-Project-MVP">Project Repo</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section>
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center">
+                            <h6>What's inside?</h6>
+
+                            <h2 class="mb-5">Preview at glance</h2>
+                            <div class="scrollspy-example-item" id="item-1">
+                                <h5>Some Features</h5>
+
+                                <p>This is the Homepage built for smooth user experience.</p>
+                                <img src="{{ url_for('static', filename='img/3.png') }}" class="scrollspy-example-item-image img-fluid" alt>
+
+
+                                <p><strong>Services Rendering</strong>.</p>
+                                <img src="{{ url_for('static', filename='img/4.png') }}" class="scrollspy-example-item-image img-fluid" alt>
+                            </div>
+                        </div>                
+
+
+            <section class="author-section section-padding" id="section_3">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+                            <img src="{{ url_for('static', filename='img/5.jpg') }}" class="author-image img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+                            <h6>Meet Author</h6>
+
+                            <h2 class="mb-4">Adeniyi Emmanuel Ayodeji</h2>
+
+                            <p> I am A Software Engineer, with the motive to thrive and excel in my line of field, building this project with affordability and ease of the general public in mind.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            
+            
+
+                        <div class="col-lg-6 col-12">
+                            <h6 class="mt-5">Say hi and talk to me</h6>
+
+                            <h2 class="mb-4">Contact</h2>
+
+                            <p class="mb-2" >
+                             <span style="color: black;">+2348149192069</span>
+                            </p>
+
+                            <p>
+                            <span style="color: black;">adeniyiemmanuel998@gmail.com</span>
+                            </p>
+
+                            <h6 class="site-footer-title mt-5 mb-3">Social</h6>
+
+                            <ul class="social-icon mb-4">
+
+                                <li class="social-icon-item">
+                                    <a href="{{ url_for('static', filename='https://www.twitter.com/drayodejioffic_1') }}" class="social-icon-link bi-twitter"></a>
+                                </li>
+                                
+                                <li class="social-icon-item">
+                                    <a href="{{ url_for('static', filename='https://www.facebook.com/adeniyiolanrewajuayodeji') }}" class="social-icon-link bi-facebook"></a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/jquery.sticky.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/click-scroll.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+    </body>
+</html>

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+
+	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GWUS</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/global.css" rel="stylesheet">
-	<link href="css/index.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-	<script src="js/jquery-2.1.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <title>GWUS Driving School</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css2/bootstrap.min.css') }}">
+	<link href="{{ url_for('static', filename='css2/global.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename='css2/index.css') }}" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css2/font-awesome.min.css') }}">
+	<link href="{{ url_for('static', filename='https://fonts.googleapis.com/css2?family=Poppins&display=swap') }}" rel="stylesheet">
+	 <script src="{{ url_for('static', filename='js/jquery-2.1.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 
   </head>
 <body>
@@ -23,10 +24,10 @@
    <div class="col-sm-8">
     <div class="top_1l clearfix">
 	 <ul class="mgt">
-	  <li><a href="index.html">Home</a></li>
-	  <li><a href="about.html">About</a></li>
-	  <li><a href="services.html">Services</a></li>
-	  <li class="border_none"><a href="index.html">Home</a></li>
+	  <li><a href="/">Home</a></li>
+	  <li><a href="/about">About</a></li>
+	  <li><a href="/services">Services</a></li>
+	  <li class="border_none"><a href="/">Home</a></li>
 	 </ul>
 	</div>
    </div>
@@ -52,7 +53,7 @@
   <div class="head_top1 clearfix">
     <div class="col-sm-4">
 	 <div class="head_top1l clearfix">
-	  <h3 class="mgt"><a href="index.html"><i class="fa fa-car col_1"></i> GWUS<br> <span class="font_14 col_2">Driving School</span></a></h3>
+	  <h3 class="mgt"><a href="/"><i class="fa fa-car col_1"></i> GWUS<br> <span class="font_14 col_2">Driving School</span></a></h3>
 	 </div>
 	</div>
 	<div class="col-sm-8">
@@ -89,18 +90,18 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html"><i class="fa fa-car col_1"></i> GWUS<br> <span class="font_14 col_2">Driving School</span></a>
+				<a class="navbar-brand" href="/"><i class="fa fa-car col_1"></i> GWUS<br> <span class="font_14 col_2">Driving School</span></a>
 			</div>
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			  	 <ul class="nav navbar-nav">
-				<li><a class="m_tag" href="index.html">Home</a></li>
-				<li><a class="m_tag" href="about.html">About</a></li>
-				<li><a class="m_tag" href="services.html">Services</a></li>
-				<li><a class="m_tag active_tab" href="team.html">Team</a></li>
-				<li><a class="m_tag" href="pricing.html">Pricing</a></li>
-				<li><a class="m_tag" href="contact.html">Contact</a></li>
+				<li><a class="m_tag" href="/">Home</a></li>
+				<li><a class="m_tag" href="/about">About</a></li>
+				<li><a class="m_tag" href="/services">Services</a></li>
+				<li><a class="m_tag active_tab" href="/team">Team</a></li>
+				<li><a class="m_tag" href="/pricing">Pricing</a></li>
+				<li><a class="m_tag" href="/contact">Contact</a></li>
 			</ul>
 			      <ul class="nav navbar-nav navbar-right">
 				    <li><div class="input-group">
@@ -125,7 +126,7 @@
     <div class="col-sm-12">
 	 <div class="center_o1 text-center">
 	   <h2 class="mgt big">INSTRUCTORS</h2>
-	   <h4><a href="index.html">Home</a> / <span class="col_1">Instructors</span></h4>
+	   <h4><a href="/">Home</a> / <span class="col_1">Instructors</span></h4>
 	 </div>
 	</div>
    </div>
@@ -140,9 +141,9 @@
     <div class="team_1i text-center clearfix">
 	  <div class="grid clearfix">
 		  <figure class="effect-jazz">
-			<a href="#"><img src="img/4.jpg" class="iw" alt="img25"></a>
+			<a href="#"><img src="{{ url_for('static', filename='img/4.jpg') }}" class="iw" alt="img25"></a>
 		  </figure>
-	  </div>
+	  </div> 
 	  <hr>
 	  <h4 class="big col_4">Eget Nulla</h4>
 	  <h5 class="col">Instructor</h5>
@@ -160,7 +161,7 @@
     <div class="team_1i text-center clearfix">
 	  <div class="grid clearfix">
 		  <figure class="effect-jazz">
-			<a href="#"><img src="img/5.jpg" class="iw" alt="img25"></a>
+			<a href="#"><img src="{{ url_for('static', filename='img/5.jpg') }}" class="iw" alt="img25"></a>
 		  </figure>
 	  </div>
 	  <hr>
@@ -180,7 +181,7 @@
     <div class="team_1i text-center clearfix">
 	  <div class="grid clearfix">
 		  <figure class="effect-jazz">
-			<a href="#"><img src="img/6.jpg" class="iw" alt="img25"></a>
+			<a href="#"><img src="{{ url_for('static', filename='img/6.jpg') }}" class="iw" alt="img25"></a>
 		  </figure>
 	  </div>
 	  <hr>
@@ -200,7 +201,7 @@
     <div class="team_1i text-center clearfix">
 	  <div class="grid clearfix">
 		  <figure class="effect-jazz">
-			<a href="#"><img src="img/7.jpg" class="iw" alt="img25"></a>
+			<a href="#"><img src="{{ url_for('static', filename='img/7.jpg') }}" class="iw" alt="img25"></a>
 		  </figure>
 	  </div>
 	  <hr>
@@ -222,7 +223,7 @@
     <div class="team_1i text-center clearfix">
 	  <div class="grid clearfix">
 		  <figure class="effect-jazz">
-			<a href="#"><img src="img/16.jfif" class="iw" alt="img25"></a>
+			<a href="#"><img src="{{ url_for('static', filename='img/16.jfif') }}" class="iw" alt="img25"></a>
 		  </figure>
 	  </div>
 	  <hr>
@@ -242,7 +243,7 @@
     <div class="team_1i text-center clearfix">
 	  <div class="grid clearfix">
 		  <figure class="effect-jazz">
-			<a href="#"><img src="img/17.jpg" class="iw" alt="img25"></a>
+			<a href="#"><img src="{{ url_for('static', filename='img/17.jpg') }}" class="iw" alt="img25"></a>
 		  </figure>
 	  </div>
 	  <hr>
@@ -262,7 +263,7 @@
     <div class="team_1i text-center clearfix">
 	  <div class="grid clearfix">
 		  <figure class="effect-jazz">
-			<a href="#"><img src="img/18.jpg" class="iw" alt="img25"></a>
+			<a href="#"><img src="{{ url_for('static', filename='img/18.jpg') }}" class="iw" alt="img25"></a>
 		  </figure>
 	  </div>
 	  <hr>
@@ -282,7 +283,7 @@
     <div class="team_1i text-center clearfix">
 	  <div class="grid clearfix">
 		  <figure class="effect-jazz">
-			<a href="#"><img src="img/19.jfif" class="iw" alt="img25"></a>
+			<a href="#"><img src="{{ url_for('static', filename='img/19.jfif') }}" class="iw" alt="img25"></a>
 		  </figure>
 	  </div>
 	  <hr>
@@ -414,7 +415,7 @@
       <div class="footer_2i1i clearfix">
 	   <div class="col-sm-3 space_all col-xs-3">
 	     <div class="footer_2i1il clearfix">
-		  <a href="#"><img src="img/8.jpg" class="iw" alt="abc"></a>
+		  <a href="#"><img src="{{ url_for('static', filename='img/8.jpg') }}" class="iw" alt="abc"></a>
 		 </div>
 	   </div>
 	   <div class="col-sm-9 space_right col-xs-9">
@@ -427,7 +428,7 @@
 	  <div class="footer_2i1i clearfix">
 	   <div class="col-sm-3 space_all col-xs-3">
 	     <div class="footer_2i1il clearfix">
-		  <a href="#"><img src="img/9.jpg" class="iw" alt="abc"></a>
+		  <a href="#"><img src="{{ url_for('static', filename='img/9.jpg') }}" class="iw" alt="abc"></a>
 		 </div>
 	   </div>
 	   <div class="col-sm-9 space_right col-xs-9">
@@ -440,7 +441,7 @@
 	  <div class="footer_2i1i clearfix">
 	   <div class="col-sm-3 space_all col-xs-3">
 	     <div class="footer_2i1il clearfix">
-		  <a href="#"><img src="img/10.jpg" class="iw" alt="abc"></a>
+		  <a href="#"><img src="{{ url_for('static', filename='img/10.jpg') }}" class="iw" alt="abc"></a>
 		 </div>
 	   </div>
 	   <div class="col-sm-9 space_right col-xs-9">

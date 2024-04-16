@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GWUS Driving School</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/global.css" rel="stylesheet">
-	<link href="css/index.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-	<script src="js/jquery-2.1.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css2/bootstrap.min.css') }}">
+	<link href="{{ url_for('static', filename='css2/global.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename='css2/index.css') }}" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css2/font-awesome.min.css') }}">
+	<link href="{{ url_for('static', filename='https://fonts.googleapis.com/css2?family=Poppins&display=swap') }}" rel="stylesheet">
+	 <script src="{{ url_for('static', filename='js/jquery-2.1.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 
   </head>
 <body>
@@ -23,10 +23,10 @@
    <div class="col-sm-8">
     <div class="top_1l clearfix">
 	 <ul class="mgt">
-	  <li><a href="index.html">Home</a></li>
-	  <li><a href="about.html">About</a></li>
-	  <li><a href="services.html">Services</a></li>
-	  <li class="border_none"><a href="index.html">Home</a></li>
+	  <li><a href="{{ url_for('index') }}">Home</a></li>
+	  <li><a href="{{ url_for('about') }}">About</a></li>
+	  <li><a href="/services">Services</a></li>
+	  <li><a href="/logout">Logout</a><li>
 	 </ul>
 	</div>
    </div>
@@ -52,7 +52,7 @@
   <div class="head_top1 clearfix">
     <div class="col-sm-4">
 	 <div class="head_top1l clearfix">
-	  <h3 class="mgt"><a href="index.html"><i class="fa fa-car col_1"></i> GWUS <br> <span class="font_14 col_2">Driving School</span></a></h3>
+	  <h3 class="mgt"><a href="/"><i class="fa fa-car col_1"></i> GWUS <br> <span class="font_14 col_2">Driving School</span></a></h3>
 	 </div>
 	</div>
 	<div class="col-sm-8">
@@ -89,28 +89,19 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html"><i class="fa fa-car col_1"></i> GWUS<br> <span class="font_14 col_2">Driving School</span></a>
+				<a class="navbar-brand" href="/"><i class="fa fa-car col_1"></i> GWUS<br> <span class="font_14 col_2">Driving School</span></a>
 			</div>
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			  	 <ul class="nav navbar-nav">
-				<li><a class="m_tag active_tab" href="index.html">Home</a></li>
-				<li><a class="m_tag" href="about.html">About</a></li>
-				<li><a class="m_tag" href="services.html">Services</a></li>
-				<li><a class="m_tag" href="team.html">Team</a></li>
-				<li><a class="m_tag" href="pricing.html">Pricing</a></li>
-				<li><a class="m_tag" href="contact.html">Contact</a></li>
+				<li><a class="m_tag active_tab" href="/">Home</a></li>
+				<li><a class="m_tag" href="/about">About</a></li>
+				<li><a class="m_tag" href="/services ">Services</a></li>
+				<li><a class="m_tag" href="/team">Team</a></li>
+				<li><a class="m_tag" href="/pricing">Pricing</a></li>
+				<li><a class="m_tag" href="/contact">Contact</a></li>
 			</ul>
-			      <ul class="nav navbar-nav navbar-right">
-				    <li><div class="input-group">
-				<input type="text" class="form-control" placeholder="Search Here...">
-				<span class="input-group-btn">
-					<button class="btn btn-primary" type="button">
-						<i class="fa fa-search"></i></button>
-				</span>
-		</div></li>
-			      </ul>
 			</div>
 			<!-- /.navbar-collapse -->
 		</div>
@@ -139,7 +130,7 @@
 		    <div class="col-sm-12">
 			 <h4 class="mgt col"> GWUS DRIVING SCHOOL </h4>
 			 <p class="col_3">We give the best when it comes to impacting driving knowledges and skills.</p>
-			 <h5><a class="button" href="#">FIND OUT MORE </a></h5>
+			 <h5><a class="button" href="/services">FIND OUT MORE </a></h5>
 			</div>
 		  </div>
 		</div>
@@ -148,7 +139,7 @@
 		  <div class="hero clearfix">
 		    <div class="col-sm-12">
 			 <h4 class="mgt col"> GWUS DRIVING SCHOOL </h4>
-			 <h5><a class="button" href="#">FIND OUT MORE </a></h5>
+			 <h5><a class="button" href="/services">FIND OUT MORE </a></h5>
 			</div>
 		  </div>
 		</div>
@@ -157,7 +148,7 @@
 		  <div class="hero clearfix">
 		    <div class="col-sm-12">
 			 <h4 class="mgt col"> GWUS DRIVING SCHOOL </h4>
-			 <h5><a class="button" href="#">FIND OUT MORE </a></h5>
+			 <h5><a class="button" href="/services">FIND OUT MORE </a></h5>
 			</div>
 		  </div>
 	  </div> 
@@ -181,7 +172,7 @@
 	   <div class="feature_2i1 clearfix">
 	    <h5 class="mgt">BEST SAFETY MEASURES</h5>
 		<p></p>
-		<h6><a class="button bold" href="#">READ MORE</a></h6>
+		<h6><a class="button bold" href="/services">READ MORE</a></h6>
 	   </div>
 	   <div class="feature_2i2 clearfix">
 	    <span><i class="fa fa-bullhorn"></i></span>
@@ -192,7 +183,7 @@
       <div class="feature_2i clearfix">
 	   <div class="feature_2i1 clearfix">
 	    <h5 class="mgt">EXPERIENCED INSTRUCTORS</h5>
-		<h6><a class="button bold" href="#">READ MORE</a></h6>
+		<h6><a class="button bold" href="/team">READ MORE</a></h6>
 	   </div>
 	   <div class="feature_2i2 clearfix">
 	    <span><i class="fa fa-users"></i></span>
@@ -203,7 +194,7 @@
       <div class="feature_2i clearfix">
 	   <div class="feature_2i1 clearfix">
 	    <h5 class="mgt">PERFECT TIMING</h5>
-		<h6><a class="button bold" href="#">READ MORE</a></h6>
+		<h6><a class="button bold" href="/services">READ MORE</a></h6>
 	   </div>
 	   <div class="feature_2i2 clearfix">
 	    <span><i class="fa fa-clock-o"></i></span>
@@ -216,7 +207,7 @@
       <div class="feature_2i clearfix">
 	   <div class="feature_2i1 clearfix">
 	    <h5 class="mgt">AFFORDABLE FEE</h5>
-		<h6><a class="button bold" href="#">READ MORE</a></h6>
+		<h6><a class="button bold" href="/pricing">READ MORE</a></h6>
 	   </div>
 	   <div class="feature_2i2 clearfix">
 	    <span><i class="fa fa-money"></i></span>
@@ -227,7 +218,7 @@
       <div class="feature_2i clearfix">
 	   <div class="feature_2i1 clearfix">
 	    <h5 class="mgt">VIDEO CLASSES</h5>
-		<h6><a class="button bold" href="#">READ MORE</a></h6>
+		<h6><a class="button bold" href="/services">READ MORE</a></h6>
 	   </div>
 	   <div class="feature_2i2 clearfix">
 	    <span><i class="fa fa-play-circle-o"></i></span>
@@ -238,7 +229,7 @@
       <div class="feature_2i clearfix">
 	   <div class="feature_2i1 clearfix">
 	    <h5 class="mgt">QUICK LICENSE</h5>
-		<h6><a class="button bold" href="#">READ MORE</a></h6>
+		<h6><a class="button bold" href="/services">READ MORE</a></h6>
 	   </div>
 	   <div class="feature_2i2 clearfix">
 	    <span><i class="fa fa-credit-card"></i></span>
@@ -265,7 +256,7 @@
     <div class="team_1i text-center clearfix">
 	  <div class="grid clearfix">
 		  <figure class="effect-jazz">
-			<a href="#"><img src="img/4.jpg" class="iw" alt="img25"></a>
+			<a href="#"><img src="{{ url_for('static', filename='img/4.jpg') }}" class="iw" alt="img25"></a>
 		  </figure>
 	  </div>
 	  <hr>
@@ -285,7 +276,7 @@
     <div class="team_1i text-center clearfix">
 	  <div class="grid clearfix">
 		  <figure class="effect-jazz">
-			<a href="#"><img src="img/5.jpg" class="iw" alt="img25"></a>
+			<a href="#"><img src="{{ url_for('static', filename='img/5.jpg') }}" class="iw" alt="img25"></a>
 		  </figure>
 	  </div>
 	  <hr>
@@ -305,7 +296,7 @@
     <div class="team_1i text-center clearfix">
 	  <div class="grid clearfix">
 		  <figure class="effect-jazz">
-			<a href="#"><img src="img/6.jpg" class="iw" alt="img25"></a>
+			<a href="#"><img src="{{ url_for('static', filename='img/6.jpg') }}" class="iw" alt="img25"></a>
 		  </figure>
 	  </div>
 	  <hr>
@@ -325,7 +316,7 @@
     <div class="team_1i text-center clearfix">
 	  <div class="grid clearfix">
 		  <figure class="effect-jazz">
-			<a href="#"><img src="img/7.jpg" class="iw" alt="img25"></a>
+			<a href="#"><img src="{{ url_for('static', filename='img/7.jpg') }}" class="iw" alt="img25"></a>
 		  </figure>
 	  </div>
 	  <hr>
@@ -365,7 +356,7 @@
 	 </div>
 	 <div class="courses_1i2 clearfix">
 	   <h4 class="mgt">TEEN COURSES</h4>
-	   <h5><a href="#">APPLY NOW <i class="fa fa-long-arrow-right"></i></a></h5>
+	   <h5><a href="/pricing">APPLY NOW <i class="fa fa-long-arrow-right"></i></a></h5>
 	 </div>
 	</div>
    </div>
@@ -377,7 +368,7 @@
 	 </div>
 	 <div class="courses_1i2 clearfix">
 	   <h4 class="mgt">DEFENSIVE COURSES</h4>
-	   <h5><a href="#">APPLY NOW <i class="fa fa-long-arrow-right"></i></a></h5>
+	   <h5><a href="/pricing">APPLY NOW <i class="fa fa-long-arrow-right"></i></a></h5>
 	 </div>
 	</div>
    </div>
@@ -389,7 +380,7 @@
 	 </div>
 	 <div class="courses_1i2 clearfix">
 	   <h4 class="mgt">HANDICAP COURSES</h4>
-	   <h5><a href="#">APPLY NOW <i class="fa fa-long-arrow-right"></i></a></h5>
+	   <h5><a href="/pricing">APPLY NOW <i class="fa fa-long-arrow-right"></i></a></h5>
 	 </div>
 	</div>
    </div>
@@ -401,7 +392,7 @@
 	 </div>
 	 <div class="courses_1i2 clearfix">
 	   <h4 class="mgt">CRASH COURSES</h4>
-	   <h5><a href="#">APPLY NOW <i class="fa fa-long-arrow-right"></i></a></h5>
+	   <h5><a href="/pricing">APPLY NOW <i class="fa fa-long-arrow-right"></i></a></h5>
 	 </div>
 	</div>
    </div>
@@ -430,7 +421,7 @@
 	   </blockquote>
 	  </div>
 	  <div class="testim_1l2 clearfix">
-	    <img src="img/4.jpg" width="100" height="100" alt="abc">
+	    <img src="{{ url_for('static', filename='img/4.jpg') }}" width="100" height="100" alt="abc">
 	  </div>
 	</div>
    </div>
@@ -443,7 +434,7 @@
 	   </blockquote>
 	  </div>
 	  <div class="testim_1l2 clearfix">
-	    <img src="img/5.jpg" width="100" height="100" alt="abc">
+	    <img src="{{ url_for('static', filename='img/5.jpg') }}" width="100" height="100" alt="abc">
 	  </div>
 	</div>
    </div>
@@ -458,7 +449,7 @@
 	   </blockquote>
 	  </div>
 	  <div class="testim_1l2 clearfix">
-	    <img src="img/6.jpg" width="100" height="100" alt="abc">
+	    <img src="{{ url_for('static', filename='img/6.jpg') }}" width="100" height="100" alt="abc">
 	  </div>
 	</div>
    </div>
@@ -471,7 +462,7 @@
 	   </blockquote>
 	  </div>
 	  <div class="testim_1l2 clearfix">
-	    <img src="img/7.jpg" width="100" height="100" alt="abc">
+	    <img src="{{ url_for('static', filename='img/7.jpg') }}" width="100" height="100" alt="abc">
 	  </div>
 	</div>
    </div>
@@ -502,7 +493,7 @@
 	  <h6 class="col_3 normal">17 Video Classes</h6>
 	  <h6 class="col_3 normal">5 Hours Per Day</h6>
 	  <h6 class="col_3 normal">Weekly 3 Tests</h6>
-	  <h5><a href="#" class="button">JOIN NOW</a></h5>
+	  <h5><a href="/pricing" class="button">JOIN NOW</a></h5>
 	 </div>
 	 <div class="pricing_1i2 clearfix">
 	  <h3 class="mgt col">$150</h3>
@@ -520,7 +511,7 @@
 	  <h6 class="normal">19 Video Classes</h6>
 	  <h6 class="normal">7 Hours Per Day</h6>
 	  <h6 class="normal">Weekly 4 Tests</h6>
-	  <h5><a href="#" class="button_1">JOIN NOW</a></h5>
+	  <h5><a href="/pricing" class="button_1">JOIN NOW</a></h5>
 	 </div>
 	 <div class="pricing_1i2 pricing_1i2bg clearfix">
 	  <h3 class="mgt">$300</h3>
@@ -538,7 +529,7 @@
 	  <h6 class="col_3 normal">40 Video Classes</h6>
 	  <h6 class="col_3 normal">8 Hours Per Day</h6>
 	  <h6 class="col_3 normal">Weekly 5 Tests</h6>
-	  <h5><a href="#" class="button">JOIN NOW</a></h5>
+	  <h5><a href="/pricing" class="button">JOIN NOW</a></h5>
 	 </div>
 	 <div class="pricing_1i2 pricing_1i2bg1 clearfix">
 	  <h3 class="mgt col">$450</h3>
@@ -571,7 +562,7 @@
 	  </div>
 	  <div class="col-sm-2 space_all col-xs-2">
 	   <div class="help_1ir text-center clearfix">
-	    <span><a href="#"><i class="fa fa-chevron-right"></i></a></span>
+	    <span><a href="/pricing"><i class="fa fa-chevron-right"></i></a></span>
 	   </div>
 	  </div>
 	 </div>
@@ -586,7 +577,7 @@
 	  </div>
 	  <div class="col-sm-2 space_all col-xs-2">
 	   <div class="help_1ir text-center clearfix">
-	    <span><a href="#"><i class="fa fa-chevron-right"></i></a></span>
+	    <span><a href="/services"><i class="fa fa-chevron-right"></i></a></span>
 	   </div>
 	  </div>
 	 </div>
@@ -601,7 +592,7 @@
 	  </div>
 	  <div class="col-sm-2 space_all col-xs-2">
 	   <div class="help_1ir text-center clearfix">
-	    <span><a href="#"><i class="fa fa-chevron-right"></i></a></span>
+	    <span><a href="/contact"><i class="fa fa-chevron-right"></i></a></span>
 	   </div>
 	  </div>
 	 </div>
@@ -649,12 +640,10 @@
 	<div class="col-sm-3">
 	 <div class="footer_2i clearfix">
 	  <h4 class="col mgt">CATEGORIES</h4>
-	  <h6 class="col-sm-12 col-xs-6 space_left"><a href="#">Driving</a></h6>
-	  <h6 class="col-sm-12 col-xs-6 space_left"><a href="#">Exam</a></h6>
-	  <h6 class="col-sm-12 col-xs-6 space_left"><a href="#">Instruction</a></h6>
-	  <h6 class="col-sm-12 col-xs-6 space_left"><a href="#">Instructor</a></h6>
-	  <h6 class="col-sm-12 col-xs-6 space_left"><a href="#">License</a></h6>
-	  <h6 class="col-sm-12 col-xs-6 space_left"><a href="#">Policy</a></h6>
+	  <h6 class="col-sm-12 col-xs-6 space_left"><a href="/services">Driving</a></h6>
+	  <h6 class="col-sm-12 col-xs-6 space_left"><a href="/team">Instructor</a></h6>
+	  <h6 class="col-sm-12 col-xs-6 space_left"><a href="/services">License</a></h6>
+	  <h6 class="col-sm-12 col-xs-6 space_left"><a href="/services">Policy</a></h6>
 	 </div>
 	</div>
 	<div class="col-sm-3">
@@ -663,7 +652,7 @@
       <div class="footer_2i1i clearfix">
 	   <div class="col-sm-3 space_all col-xs-3">
 	     <div class="footer_2i1il clearfix">
-		  <a href="#"><img src="img/8.jpg" class="iw" alt="abc"></a>
+		  <a href="#"><img src="{{ url_for('static', filename='img/8.jpg') }}" class="iw" alt="abc"></a>
 		 </div>
 	   </div>
 	   <div class="col-sm-9 space_right col-xs-9">
@@ -676,7 +665,7 @@
 	  <div class="footer_2i1i clearfix">
 	   <div class="col-sm-3 space_all col-xs-3">
 	     <div class="footer_2i1il clearfix">
-		  <a href="#"><img src="img/9.jpg" class="iw" alt="abc"></a>
+		  <a href="#"><img src="{{ url_for('static', filename='img/9.jpg') }}" class="iw" alt="abc"></a>
 		 </div>
 	   </div>
 	   <div class="col-sm-9 space_right col-xs-9">
@@ -689,7 +678,8 @@
 	  <div class="footer_2i1i clearfix">
 	   <div class="col-sm-3 space_all col-xs-3">
 	     <div class="footer_2i1il clearfix">
-		  <a href="#"><img src="img/10.jpg" class="iw" alt="abc"></a>
+		  <a href="#"><img src="{{ url_for('static', filename='img/10.jpg') }}" class="iw" alt="abc"></a>
+		  <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
 		 </div>
 	   </div>
 	   <div class="col-sm-9 space_right col-xs-9">
@@ -744,3 +734,4 @@ $(document).ready(function(){
 </body>
  
 </html>
+ 
