@@ -81,7 +81,7 @@ def register():
         new_user = User(username, password)
         new_user.save_to_db()
         session['logged_in'] = True
-        return redirect(url_for('index'))
+        return redirect(url_for('login_page'))
 
 # Route for the home page
 @app.route('/index')
